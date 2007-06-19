@@ -44,5 +44,3 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %dir %{_libdir}/ocaml/site-lib/ocamlduce
 %{_libdir}/ocaml/site-lib/ocamlduce/*
-
-%changelog
