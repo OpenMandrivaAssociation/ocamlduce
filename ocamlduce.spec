@@ -6,7 +6,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	A merger between OCaml and CDuce
-URL:		http://caml.inria.fr
+URL:		http://www.cduce.org/ocaml
 License:	QPL & LGPL
 Group:		Development/Other
 Source0:	http://gallium.inria.fr/~frisch/ocamlduce/download/%{name}-%{version}.tar.gz
