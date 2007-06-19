@@ -11,8 +11,7 @@ License:	QPL & LGPL
 Group:		Development/Other
 Source0:	http://gallium.inria.fr/~frisch/ocamlduce/download/%{name}-%{version}.tar.gz
 Patch0:		ocamlduce-3.10.0-destdir.patch
-BuildRequires:	libx11-devel ncurses-devel tcl tcl-devel tk tk-devel emacs-bin db4-devel
-BuildRequires:	ocaml ocamlfind
+BuildRequires:	ncurses-devel ocaml ocamlfind-mini
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
