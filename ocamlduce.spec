@@ -12,6 +12,7 @@ Group:		Development/Other
 Source0:	http://gallium.inria.fr/~frisch/ocamlduce/download/%{name}-%{version}.tar.gz
 Patch0:		ocamlduce-3.10.0-destdir.patch
 BuildRequires:	ncurses-devel ocaml ocamlfind-mini
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 OCamlDuce is a merger between OCaml and CDuce. It comes as a modified
