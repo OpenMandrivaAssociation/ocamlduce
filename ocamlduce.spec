@@ -1,6 +1,6 @@
 %define name	ocamlduce
 %define version	3.10.0
-%define release	%mkrel 1
+%define release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
