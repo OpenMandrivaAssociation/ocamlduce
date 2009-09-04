@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc LICENSE README
+%doc LICENSE README Changes
 %{_bindir}/*
 %dir %{_libdir}/ocaml/ocamlduce
 %{_libdir}/ocaml/ocamlduce/*
