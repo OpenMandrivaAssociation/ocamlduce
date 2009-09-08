@@ -28,7 +28,7 @@ OCaml (with the same exceptions).
 
 %build
 make prepare OCAML_SOURCE=/usr/src/ocaml/ OCAML_SRCDIR=ocaml
-(cd ocaml/ && ./configure -prefix /usr \
+(cd ocaml/ && ./configure -bindir %{_bindir} -libdir %{_libdir}/ocaml -mandir %{_mandir}/man1 \
            && make -f Makefile.ocamlduce world world.opt)
 
 %install
