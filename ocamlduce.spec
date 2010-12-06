@@ -1,6 +1,6 @@
 Name:           ocamlduce
 Version:        3.11.1.0
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        A merger between OCaml and CDuce
 License:        QPL & LGPL & MIT
 Group:          Development/Other
