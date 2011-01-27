@@ -1,15 +1,14 @@
 Name:           ocamlduce
-Version:        3.11.1.0
-Release:        %mkrel 2
+Version:        3.12.0.0
+Release:        %mkrel 1
 Summary:        A merger between OCaml and CDuce
 License:        QPL & LGPL & MIT
 Group:          Development/Other
 URL:            http://ocamlduce.forge.ocamlcore.org/
 Source0:        http://forge.ocamlcore.org/frs/download.php/225/ocamlduce-%{version}.tar.gz
-Patch0:         0001-Build-and-install-native-code-plugin.patch
 Patch1:         ocamlduce-3.11.1.0.src-as-dir.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
-BuildRequires:  ocaml >= 3.11.1
+BuildRequires:  ocaml >= 3.12.0
 BuildRequires:  ocaml-sources
 BuildRequires:  ocaml-findlib
 
@@ -23,13 +22,12 @@ OCaml (with the same exceptions).
 
 %prep
 %setup -q
-%patch0 -p1
 %patch1 -p1
 
 %build
 make prepare OCAML_SOURCE=/usr/src/ocaml/ OCAML_SRCDIR=ocaml
 (cd ocaml/ && ./configure -bindir %{_bindir} -libdir %{_libdir}/ocaml -mandir %{_mandir}/man1 \
-           && make -f Makefile.ocamlduce world world.opt)
+           && make -f Makefile.ocamlduce world.opt)
 
 %install
 rm -rf %{buildroot}
