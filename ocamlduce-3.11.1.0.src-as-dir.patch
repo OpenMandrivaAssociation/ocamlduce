@@ -1,0 +1,11 @@
+--- ocamlduce-3.11.1.0/Makefile	2009-06-13 01:49:38.000000000 +0200
++++ ocamlduce-3.11.1.0.new/Makefile	2009-08-18 02:35:04.000000000 +0200
+@@ -36,7 +36,7 @@
+ 	@echo "===> Please explicit what you want <==="
+ 
+ prepare:
+-	tar xf $(OCAML_SOURCE)
++	cp -PpR $(OCAML_SOURCE) ./
+ 	cp -PpR $(DUCEP_FILES) $(OCAML_SRCDIR)
+ 	cp -PpR ocamlduce $(OCAML_SRCDIR)/otherlibs
+ 	cd $(OCAML_SRCDIR) && for X in ../patches/*.diff; do patch -p1 < $$X; done
