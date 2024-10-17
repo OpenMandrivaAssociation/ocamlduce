@@ -4,7 +4,7 @@ Release:        %mkrel 1
 Summary:        A merger between OCaml and CDuce
 License:        QPL & LGPL & MIT
 Group:          Development/Other
-URL:            http://ocamlduce.forge.ocamlcore.org/
+URL:            https://ocamlduce.forge.ocamlcore.org/
 Source0:        http://forge.ocamlcore.org/frs/download.php/225/ocamlduce-%{version}.tar.gz
 Patch1:         ocamlduce-3.11.1.0.src-as-dir.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
